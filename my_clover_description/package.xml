@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>my_clover_description</name>
+  <version>0.0.0</version>
+  <description>Clover drone description for ArUco field</description>
+  <maintainer email="tayap08@yandex.ru">Taya</maintainer>
+  <license>MIT</license>
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>gazebo_ros</build_depend>
+  <build_depend>xacro</build_depend>
+  <build_depend>clover_description</build_depend>
+  <exec_depend>gazebo_ros</exec_depend>
+  <exec_depend>xacro</exec_depend>
+  <exec_depend>clover_description</exec_depend>
+</package>

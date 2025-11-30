@@ -1,0 +1,2835 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="aruco_field">
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <model name="car">
+      <pose>5 5 0.001 0 0 0</pose>
+      <link name="link">
+        <gravity>0</gravity>
+        <visual name="visual" cast_shadows="true">
+          <geometry>
+            <mesh>
+              <uri>file://cybertruck_new_textured.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+      </link>
+      
+      <plugin name="random_movement" filename="libRandomMovementPlugin.so">
+        <field_size_x>9</field_size_x>
+        <field_size_y>9</field_size_y>
+        <object_size_x>2.0</object_size_x>
+        <object_size_y>0.8</object_size_y>
+      </plugin>
+    </model>
+
+    <model name="aruco_marker_000">
+      <static>true</static>
+      <pose>0.0 0.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_000</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_001">
+      <static>true</static>
+      <pose>1.0 0.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_001</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_002">
+      <static>true</static>
+      <pose>2.0 0.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_002</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_003">
+      <static>true</static>
+      <pose>3.0 0.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_003</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_004">
+      <static>true</static>
+      <pose>4.0 0.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_004</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_005">
+      <static>true</static>
+      <pose>5.0 0.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_005</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_006">
+      <static>true</static>
+      <pose>6.0 0.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_006</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_007">
+      <static>true</static>
+      <pose>7.0 0.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_007</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_008">
+      <static>true</static>
+      <pose>8.0 0.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_008</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_009">
+      <static>true</static>
+      <pose>9.0 0.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_009</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_010">
+      <static>true</static>
+      <pose>0.0 1.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_010</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_011">
+      <static>true</static>
+      <pose>1.0 1.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_011</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_012">
+      <static>true</static>
+      <pose>2.0 1.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_012</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_013">
+      <static>true</static>
+      <pose>3.0 1.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_013</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_014">
+      <static>true</static>
+      <pose>4.0 1.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_014</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_015">
+      <static>true</static>
+      <pose>5.0 1.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_015</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_016">
+      <static>true</static>
+      <pose>6.0 1.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_016</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_017">
+      <static>true</static>
+      <pose>7.0 1.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_017</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_018">
+      <static>true</static>
+      <pose>8.0 1.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_018</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_019">
+      <static>true</static>
+      <pose>9.0 1.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_019</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_020">
+      <static>true</static>
+      <pose>0.0 2.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_020</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_021">
+      <static>true</static>
+      <pose>1.0 2.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_021</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_022">
+      <static>true</static>
+      <pose>2.0 2.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_022</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_023">
+      <static>true</static>
+      <pose>3.0 2.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_023</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_024">
+      <static>true</static>
+      <pose>4.0 2.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_024</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_025">
+      <static>true</static>
+      <pose>5.0 2.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_025</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_026">
+      <static>true</static>
+      <pose>6.0 2.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_026</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_027">
+      <static>true</static>
+      <pose>7.0 2.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_027</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_028">
+      <static>true</static>
+      <pose>8.0 2.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_028</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_029">
+      <static>true</static>
+      <pose>9.0 2.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_029</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_030">
+      <static>true</static>
+      <pose>0.0 3.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_030</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_031">
+      <static>true</static>
+      <pose>1.0 3.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_031</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_032">
+      <static>true</static>
+      <pose>2.0 3.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_032</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_033">
+      <static>true</static>
+      <pose>3.0 3.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_033</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_034">
+      <static>true</static>
+      <pose>4.0 3.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_034</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_035">
+      <static>true</static>
+      <pose>5.0 3.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_035</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_036">
+      <static>true</static>
+      <pose>6.0 3.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_036</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_037">
+      <static>true</static>
+      <pose>7.0 3.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_037</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_038">
+      <static>true</static>
+      <pose>8.0 3.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_038</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_039">
+      <static>true</static>
+      <pose>9.0 3.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_039</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_040">
+      <static>true</static>
+      <pose>0.0 4.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_040</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_041">
+      <static>true</static>
+      <pose>1.0 4.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_041</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_042">
+      <static>true</static>
+      <pose>2.0 4.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_042</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_043">
+      <static>true</static>
+      <pose>3.0 4.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_043</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_044">
+      <static>true</static>
+      <pose>4.0 4.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_044</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_045">
+      <static>true</static>
+      <pose>5.0 4.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_045</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_046">
+      <static>true</static>
+      <pose>6.0 4.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_046</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_047">
+      <static>true</static>
+      <pose>7.0 4.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_047</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_048">
+      <static>true</static>
+      <pose>8.0 4.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_048</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_049">
+      <static>true</static>
+      <pose>9.0 4.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_049</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_050">
+      <static>true</static>
+      <pose>0.0 5.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_050</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_051">
+      <static>true</static>
+      <pose>1.0 5.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_051</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_052">
+      <static>true</static>
+      <pose>2.0 5.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_052</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_053">
+      <static>true</static>
+      <pose>3.0 5.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_053</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_054">
+      <static>true</static>
+      <pose>4.0 5.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_054</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_055">
+      <static>true</static>
+      <pose>5.0 5.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_055</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_056">
+      <static>true</static>
+      <pose>6.0 5.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_056</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_057">
+      <static>true</static>
+      <pose>7.0 5.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_057</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_058">
+      <static>true</static>
+      <pose>8.0 5.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_058</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_059">
+      <static>true</static>
+      <pose>9.0 5.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_059</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_060">
+      <static>true</static>
+      <pose>0.0 6.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_060</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_061">
+      <static>true</static>
+      <pose>1.0 6.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_061</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_062">
+      <static>true</static>
+      <pose>2.0 6.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_062</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_063">
+      <static>true</static>
+      <pose>3.0 6.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_063</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_064">
+      <static>true</static>
+      <pose>4.0 6.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_064</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_065">
+      <static>true</static>
+      <pose>5.0 6.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_065</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_066">
+      <static>true</static>
+      <pose>6.0 6.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_066</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_067">
+      <static>true</static>
+      <pose>7.0 6.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_067</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_068">
+      <static>true</static>
+      <pose>8.0 6.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_068</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_069">
+      <static>true</static>
+      <pose>9.0 6.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_069</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_070">
+      <static>true</static>
+      <pose>0.0 7.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_070</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_071">
+      <static>true</static>
+      <pose>1.0 7.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_071</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_072">
+      <static>true</static>
+      <pose>2.0 7.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_072</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_073">
+      <static>true</static>
+      <pose>3.0 7.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_073</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_074">
+      <static>true</static>
+      <pose>4.0 7.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_074</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_075">
+      <static>true</static>
+      <pose>5.0 7.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_075</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_076">
+      <static>true</static>
+      <pose>6.0 7.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_076</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_077">
+      <static>true</static>
+      <pose>7.0 7.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_077</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_078">
+      <static>true</static>
+      <pose>8.0 7.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_078</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_079">
+      <static>true</static>
+      <pose>9.0 7.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_079</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_080">
+      <static>true</static>
+      <pose>0.0 8.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_080</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_081">
+      <static>true</static>
+      <pose>1.0 8.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_081</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_082">
+      <static>true</static>
+      <pose>2.0 8.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_082</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_083">
+      <static>true</static>
+      <pose>3.0 8.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_083</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_084">
+      <static>true</static>
+      <pose>4.0 8.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_084</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_085">
+      <static>true</static>
+      <pose>5.0 8.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_085</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_086">
+      <static>true</static>
+      <pose>6.0 8.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_086</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_087">
+      <static>true</static>
+      <pose>7.0 8.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_087</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_088">
+      <static>true</static>
+      <pose>8.0 8.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_088</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_089">
+      <static>true</static>
+      <pose>9.0 8.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_089</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_090">
+      <static>true</static>
+      <pose>0.0 9.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_090</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_091">
+      <static>true</static>
+      <pose>1.0 9.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_091</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_092">
+      <static>true</static>
+      <pose>2.0 9.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_092</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_093">
+      <static>true</static>
+      <pose>3.0 9.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_093</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_094">
+      <static>true</static>
+      <pose>4.0 9.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_094</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_095">
+      <static>true</static>
+      <pose>5.0 9.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_095</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_096">
+      <static>true</static>
+      <pose>6.0 9.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_096</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_097">
+      <static>true</static>
+      <pose>7.0 9.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_097</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_098">
+      <static>true</static>
+      <pose>8.0 9.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_098</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="aruco_marker_099">
+      <static>true</static>
+      <pose>9.0 9.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://aruco_models/materials/scripts</uri>
+              <uri>model://aruco_models/materials/textures</uri>
+              <name>Aruco/Material_099</name>
+            </script>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3 0.3 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+  </world>
+</sdf>
