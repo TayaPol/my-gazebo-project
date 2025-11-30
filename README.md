@@ -20,3 +20,30 @@ rar x my_gazebo_project.rar
 # Запустить симуляцию
 chmod +x start_complete.sh
 ./start_complete.sh
+
+Вариант 2: Использование Git
+# Клонировать репозиторий
+git clone https://github.com/TayaPol/my-gazebo-project.git
+cd my-gazebo-project
+
+# Запустить симуляцию
+chmod +x start_complete.sh
+./start_complete.sh
+
+Вариант 3: Ручной запуск
+bash
+gazebo aruco_field.world
+# Затем добавьте дрона вручную через Insert -> clover4
+
+
+Требования:
+
+Gazebo 11
+ROS (для автоматического спавна дрона)
+rar (для распаковки архива)
+
+Решение проблем:
+
+Мир не загружается: Проверьте установку Gazebo gazebo --version
+Дрон не появляется: Используйте ручное добавление через интерфейс Gazebo
+Проблемы с текстурами: Убедитесь что все файлы по правильным относительным путям
